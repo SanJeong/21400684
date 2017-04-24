@@ -16,7 +16,7 @@ int main(){
     ptr = p1;
     
     std::cout<<"이름:"<<p1->name<<std::endl;
-    
+    //gittest
     delete []p1;
     return 0;
 }
