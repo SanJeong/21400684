@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <cstring>
+#include <iomanip>
+
 struct student{ 
     char name[20]; 
     int age;
@@ -14,9 +16,10 @@ int main(){
     p1 -> age = 30;
     
     ptr = p1;
-    
-    std::cout<<"이름:"<<p1->name<<std::endl;
-    //gittest
+
+    std::cout<<"이름:"<<static_cast<struct student*>(ptr)->name <<std::endl;
+    std::cout<<"나이:"<<static_cast<struct student*>(ptr)->age <<std::endl;
+    //gittest이
     delete []p1;
     return 0;
 }

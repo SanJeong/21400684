@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <iostream>
-#include "stdafx.h"
 
 struct student{ 
     char name[20]; 
