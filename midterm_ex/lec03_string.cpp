@@ -12,5 +12,5 @@ main(){
     char name2[] = "HANDONG"; 
     char *name3 = "HANDONG";
     
-    std::cout <<strlen(name3)<< std::endl;
+    std::cout <<sizeof(name3)<< std::endl;
 }
