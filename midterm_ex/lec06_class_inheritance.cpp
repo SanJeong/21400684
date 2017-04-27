@@ -35,7 +35,10 @@ class student:public human{ //상속
 
 int main(){
     student stu("정산",23,"그림","한동");
-    stu.Schoolinfo();
+    stu.Showinfo();
+    stu.Study();
+
+    
     return 0;
 }
     

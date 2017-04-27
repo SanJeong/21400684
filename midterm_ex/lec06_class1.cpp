@@ -14,7 +14,7 @@ class student{
     void Study();
     
 };
-student::student(char* _name,int _age,char* _hobby){
+student::student(char* _name,int _age,char* _hobby){ //생성자
     name = _name;
     age = _age;
     hobby= _hobby;
