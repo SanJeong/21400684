@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 	TinyBMPMaker tbm(tb);
 	tbm.darken();
 	tbm.export_image("image/image3.bmp");
-	
+	tbm.normalize();
     tb.export_image("image/image2.bmp");
 
 	return 0;

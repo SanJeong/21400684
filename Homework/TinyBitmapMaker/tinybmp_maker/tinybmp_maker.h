@@ -19,7 +19,10 @@ public:
             return val;
     }
     
-    bool darken();
+    bool darken(float ratio);
+    bool smooth();
+    bool sharpen();
+    bool grayscale();
     void export_image(char* _path);
 private:
     TinyBitmap* m_image;
