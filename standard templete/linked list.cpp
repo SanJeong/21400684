@@ -8,10 +8,22 @@ public:
 public:
     void set_contents(int num){ contents = num; }
     int get_contents() { return contents; }
-
     void set_next(Container* next){ pNext = next;}
     Container* get_next() { return pNext; }
-
+    Container* search(int val)
+    {
+        Container* cur = pHead;
+        
+        while(cur != NULL)
+        {
+            if(cur->get_contents() == val)
+                break;
+            else
+                cur = cur->get_next();
+        }
+        return cur;
+        //return NULL;
+    }
 private:
     int contents;
     Container* pNext;
@@ -30,7 +42,7 @@ public:
         {
             // 1. list가 비어 있는 경우
             // Container 할당 by cbchoi
-            pHead = new Container(num);
+            pHead = new Container(num); 
         }
         else
         {// 2. list가 비어 있지 않는 경우
@@ -70,20 +82,7 @@ public:
         }
     }
     
-    Container* search(int val)
-    {
-        Container* cur = pHead;
-        
-        while(cur != NULL)
-        {
-            if(cur->get_contents() == val)
-                break;
-            else
-                cur = cur->get_next();
-        }
-        return cur;
-        //return NULL;
-    }
+    
     
     void erase_contents(int val)
     {
