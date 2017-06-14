@@ -20,9 +20,8 @@ public:
         m_count++;
     }
     
-    Person(int age, const char* name)
+    Person(int age, const char* name):m_age(age)
     {
-        m_age = age; 
         // m_name = name; - X
         m_name = new char[strlen(name)+1];
         strcpy(m_name, name);

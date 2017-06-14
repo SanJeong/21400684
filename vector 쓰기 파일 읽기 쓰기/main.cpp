@@ -80,7 +80,7 @@ int main(int argc, char** argv)
         print(std::cout, **iter);
     }
     
-    std::ofstream fout;
+    std::ofstream fout;//파일 쓰기
     fout.open("output2.prac");
     fout << san_dyn_array.size() << std::endl;
     for(std::vector<San*>::iterator iter = san_dyn_array.begin();
@@ -90,14 +90,14 @@ int main(int argc, char** argv)
     }
     fout.close();
     
-    std::ifstream fin;
+    std::ifstream fin;//파일 읽기
     fin.open("output2.prac");
     
     std::cout << "_____________________" << std::endl;
-    char buf[1000];
+    char buf[1000]; //글자 넣을 array 할당 해주고,
     //while(!fin.eof())
-    fin.getline(buf, 1000); // num
-    int count = atoi(buf);
+    fin.getline(buf, 1000); // num //첫번째 줄 넣으세여
+    int count = atoi(buf); //buf에 들어가 있는걸 count로 숫자로 입력 해주세여 
     
     for(int i = 0; i < count ; i++)
     {
@@ -107,8 +107,8 @@ int main(int argc, char** argv)
         int age = atoi(buf);
         fin.getline(buf, 1000); // name
         
-        San my_san = San(number, age, buf);
-        print(std::cout, my_san);
+        San my_san = San(number, age, buf); //san class로 만들어주세여
+        print(std::cout, my_san); // 프린트 해주세여
     }
     
     /*

@@ -12,7 +12,7 @@ public:
 public:
     std::string& get_name(){ return m_name; }
     
-    virtual std::string say_something(){ return m_name; } /// 
+    std::string say_something(){ return m_name; } /// 
     
 protected:
     std::string m_name;
