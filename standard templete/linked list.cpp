@@ -175,6 +175,3 @@ int main(int argc, char** argv)
     ll.print_list();
     return 0;
 }
-
-//->
-    
